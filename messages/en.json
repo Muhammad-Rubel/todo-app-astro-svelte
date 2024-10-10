@@ -1,0 +1,6 @@
+{
+  "$schema": "https://inlang.com/schema/inlang-message-format",
+  "homepageTitle": "Welcome to our homepage",
+  "homepageContent": "Here you will find all the information you need: {languageTag}",
+  "goToLanguage": "Go to English"
+}

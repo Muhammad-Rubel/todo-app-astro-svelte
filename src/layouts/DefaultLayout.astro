@@ -1,0 +1,26 @@
+---
+import { languageTag } from '../paraglide/runtime';
+import Header from '../components/Header.svelte';
+import Footer from '../components/Footer.svelte';
+import LanguagePicker from '../components/LanguagePicker.astro';
+---
+
+<html lang={languageTag()} dir={Astro.locals.paraglide.dir}>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+  </head>
+
+  <body class="p-6">
+    <Header />
+    <LanguagePicker />
+
+    <main class="max-w-4xl mx-auto">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>
