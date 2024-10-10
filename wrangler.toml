@@ -1,2 +1,10 @@
-compatibility_flags = ["nodejs_compat"]
-page_build_output_dir = "./dist"
+name = "astro-project"
+type = "javascript"
+workers_dev = true
+
+[site]
+bucket = "./dist"
+entry-point = "./src"
+
+[build]
+command = "yarn build"
